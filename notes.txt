@@ -1,0 +1,11 @@
+This document is to store various notes.
+
+Previous decadal CMZ white paper by Mark Morris:
+http://www8.nationalacademies.org/astro2010/DetailFileDisplay.aspx?id=327
+focused on cloud heating, magnetic fields.  Sort of predicted my 2016 paper... but not the method.
+
+Galactic Center (central pc?) by Andrea Ghez:
+http://www8.nationalacademies.org/astro2010/DetailFileDisplay.aspx?id=283
+
+Jessica Lu's Dependence of SF on environment:
+http://www8.nationalacademies.org/astro2010/DetailFileDisplay.aspx?id=196
