@@ -1,5 +1,12 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage{natbib}
+
+\newcommand\arcsec{\mbox{$^{''}$}\xspace} 
+\newcommand{\degrees}{\ensuremath{^{\circ}}}
+\def\agnote#1{{\color{red}#1}}
 
 \title{What is the lifecycle of gas and stars in Galaxy Centers?}
 \author{Adam Ginsburg, Elisabeth A.C. Mills, Cara Battersby, Steven Longmore, J.M. Diederik Kruijssen}
@@ -10,7 +17,7 @@
 \maketitle
 
 Star formation in the centers of large galaxies like the Milky Way is different from 'normal' star formation. % I hate this sentence, will return to it.
-The centers of disk galaxies have more scattered efficiencies than disks (Leroy et al 2013). 
+The centers of disk galaxies have more scattered efficiencies than disks \citep{Leroy2013a}. 
 
 Our own Central Molecular Zone is the closest actively star-forming nucleus.
 It is the best and only location in which we can study star formation in hot
@@ -35,13 +42,70 @@ There are XXX key questions that can be addressed over the next decade with exis
         \end{enumerate}
     \item What is the lifecycle of gas in Galactic centers?
         \begin{enumerate}
-            \item How much of the gas fed in to the CMZ eventually arrives at the central black hole?
+            \item How much of the gas fed in to the CMZ eventually arrives at the central black hole? [this is a bit redundant with (1) above]
             \item Is stellar feedback always dominant in our Galaxy, or does Sgr A* turn on?
             \item What drives the Fermi bubbles?
         \end{enumerate}
     %High energy astrophysics: Annihilation of DM, GC Pevatron? Degeneracy with star formation?\\
     %Connection of all of the above to extragalactic nuclei (and especially obscured nuclei).
 \end{enumerate}
+
+Prose version of the above:
+
+\textbf{How is gas deposited into the Galactic center from the Galactic disk?}
+Fresh material arrives to the Galactic center from the disk via the Galactic bar.
+Star formation efficiency in the bar is lower than in much of the disk
+\citep[e.g.][]{Rieko2018a}, so fresh gas can be transported inward.
+A growing suite of simulations and models
+\citep{Krumholz2015a,Sormani2015a,Torrey2016a,Ridley2017a,Krumholz2017a,Sormani2018a,Jeffreson2018a}
+show that the feeding process drives the variation between brief bursts and
+prolonged quiescence in Galactic centers.  The inner Lindblad resonance provides
+a dynamical barrier preventing the gas from moving inward, causing gas to build
+up at $\sim100$ pc, forming the CMZ \citep{Krumholz2015a}.  Gas transport further
+inward, to the nuclear cluster and the central black hole, is presently small
+and may be driven primarily by stellar feedback \agnote{(I'm just speculating
+this - I don't really know much about gas going further in except what I've
+discussed with Natalie.)}.  The infall through the final few parsecs
+is mediated by the circumnuclear disk (CND), which contains molecular and ionized
+gas at temperatures and densities seen nowhere else in the Galaxy.
+
+
+Key questions about each step in this process that can be solved in the next
+decade include:
+
+Why is the star formation efficiency low in gas along the bar?
+Much of the molecular gas along the bar has only been observed at extremely
+coarse resolution which, while useful for bulk mass inflow measurements
+\citep[e.g.][]{Sormani2019a}, are inadequate for measurements of turbulence and
+star formation.  Single-dish molecular line surveys at moderate
+($\sim30\arcsec$) resolution covering the inner $\sim20\degrees$ of the Galaxy are
+needed to measure the turbulent density and velocity distributions of these
+clouds.  We also need to continue development of the statistical tools to link gas kinematics and
+density distributions with the underlying physics
+\citep{Koch2017a,Burkhart2018a}. While multi-pixel heterodyne arrays are the
+most efficient way to produce these surveys, large time allocations with a
+single pixel are also viable.  \agnote{Is it worth mentioning that SEDIGISM has
+is the first step in this direction?  Or better to avoid mentioning an
+EU-centric program...}
+
+How is gas transported from the CMZ to the central few parsecs?
+
+
+\textbf{How does star formation change in CMZ-like environments?}
+The gas conditions in the Galactic center are substantially different from the rest of the Galaxy.
+Most of the gas mass is in a molecular state \citep{}, and the temperature in the molecular gas is several times
+higher than in disk molecular clouds, particularly at high densities \citep{Ao2013a,Ginsburg2016a,Krieger2017a}.
+There is growing evidence that the IMF in the Galactic center massive clusters, the Arches and the Quintuplet,
+is shallower than the canonical IMF \citep{Hosek2018a}.
+
+
+%        \begin{enumerate}
+%            \item What density thresholds apply at higher pressure with a stronger background cosmic ray and magnetic field?
+%            \item (How) does episodic star formation progress?  Is it linked to specific spatial or temporal triggers?
+%            \item Do the environmental differences result in a different IMF, thereby compounding the differences?
+%        \end{enumerate}
+
+
 
 \section{Needs}
 High dynamic range observations of CMZ: sensitivity/resolution to detect protostellar scales across a FOV spanning the entire CMZ. Large (central kpc) surveys of our own GC, at more frequencies, in order to infer aggregate properties in other less-resolved systems, and to enable global comparison when central kpc of nearby galaxies is easily observed all at once. Spectral survey of full CMZ
