@@ -1,5 +1,7 @@
-\documentclass{aastex62}
-%\documentclass{article}
+% "modern" gives 12pt font
+\documentclass[modern]{aastex62}
+% 1 inch margins are required
+%\usepackage[margin=1in]{geometry}
 \input{preface}
 \def\agnote#1{{\color{red}#1}}
 
@@ -14,21 +16,27 @@
 \title{What is the lifecycle of gas and stars in Galaxy Centers?}
 \date{January 2019}
 
-\section{STUFF GOES HERE}
+\section{COVERPAGE FIGURE PLACEHOLDER}
+TEXT PLACEHOLDER
+(TODO: figure out how to get page 1 to be separate without the "section" heading here)
 
-Star formation in the centers of large galaxies like the Milky Way is different from 'normal' star formation. % I hate this sentence, will return to it.
-The centers of disk galaxies have more scattered efficiencies than disks \citep{Leroy2013a}. 
+% first page should be:
+% A cover page should be included (beyond the 5-page limit) that should include
+% the title of the white paper, the thematic science area(s), and a list of
+% authors plus contact information for the lead author.
+\clearpage
+\newpage
 
-Our own Central Molecular Zone is the closest actively star-forming nucleus.
-It is the best and only location in which we can study star formation in hot
-(Ao et al 2013, Ginsburg et al 2016, Krieger et al 2017), high-pressure
-molecular gas analogous to the environments of high-redshift galaxies \citep{Kruijssen2013a}.
 
 
-There are XXX key questions that can be addressed over the next decade with existing and new facilities.
+\section{Abstract}
+There are XXX key questions that can be addressed over the next decade with
+existing and new facilities.
 
+\agnote{this nested list can be restructured into an abstract}
 \begin{enumerate}
-    \item How is the gas deposited into the Galactic Center from the Galactic disc?
+    \item How is the gas deposited into the Galactic Center from the Galactic
+        disc, and what is the lifecycle of gas in the CMZ?
     \begin{enumerate}
         \item Which transport mechanisms drive it further inwards once it has passed the inner Lindblad resonance?
         \item How does it reach the sphere of influence of the nuclear cluster?
@@ -40,17 +48,30 @@ There are XXX key questions that can be addressed over the next decade with exis
             \item (How) does episodic star formation progress?  Is it linked to specific spatial or temporal triggers?
             \item Do the environmental differences result in a different IMF, thereby compounding the differences?
         \end{enumerate}
-    \item What is the lifecycle of gas in Galactic centers?
-        \begin{enumerate}
-            \item How much of the gas fed in to the CMZ eventually arrives at the central black hole? [this is a bit redundant with (1) above]
-            \item Is stellar feedback always dominant in our Galaxy, or does Sgr A* turn on?
-            \item What drives the Fermi bubbles?
-        \end{enumerate}
+    % \item What is the lifecycle of gas in Galactic centers?
+    %     \begin{enumerate}
+    %         \item How much of the gas fed in to the CMZ eventually arrives at the central black hole? [this is a bit redundant with (1) above]
+    %         \item Is stellar feedback always dominant in our Galaxy, or does Sgr A* turn on?
+    %         \item What drives the Fermi bubbles?
+    %     \end{enumerate}
     %High energy astrophysics: Annihilation of DM, GC Pevatron? Degeneracy with star formation?\\
     %Connection of all of the above to extragalactic nuclei (and especially obscured nuclei).
 \end{enumerate}
 
-Prose version of the above:
+\section{Introduction}
+
+Star formation in the centers of large galaxies like the Milky Way is different from 'normal' star formation. % I hate this sentence, will return to it.
+The centers of disk galaxies have more scattered efficiencies than disks \citep{Leroy2013a}. 
+
+Our own Central Molecular Zone is the closest actively star-forming nucleus.
+It is the best and only location in which we can study star formation in hot
+(Ao et al 2013, Ginsburg et al 2016, Krieger et al 2017), high-pressure
+molecular gas analogous to the environments of high-redshift galaxies \citep{Kruijssen2013a}.
+
+
+
+
+
 
 \textbf{How is gas deposited into the Galactic center from the Galactic disk?}
 Fresh material arrives to the Galactic center from the disk via the Galactic bar.
@@ -84,13 +105,49 @@ clouds.  We also need to continue development of the statistical tools to link g
 density distributions with the underlying physics
 \citep{Koch2017a,Burkhart2018a}. While multi-pixel heterodyne arrays are the
 most efficient way to produce these surveys, large time allocations with a
-single pixel are also viable.  \agnote{Is it worth mentioning that SEDIGISM has
-is the first step in this direction?  Or better to avoid mentioning an
-EU-centric program...}
+single pixel are also viable.
 
-\agnote{Should we call out the Chajnator telescope?  LBT?  ARO?  as needing national support?  Maybe we should ask that Green bank be moved to -30 latitude?}
+% \agnote{Is it worth mentioning that SEDIGISM has
+% is the first step in this direction?  Or better to avoid mentioning an
+% EU-centric program...}
+%
+% \agnote{Should we call out the Chajnator telescope?  LBT?  ARO?  as needing national support?  Maybe we should ask that Green bank be moved to -30 latitude?}
 
 How is gas transported from the CMZ to the central few parsecs?
+After gas is delivered into the CMZ, models suggest that gas stops flowing
+inward and builds up until reaching some threshold and forming stars.  Shortly
+afterward, the feedback from high mass stars may dominate over the gas inflow,
+resulting in a net loss of gas from the CMZ.  This feedback drives gas both
+inward, toward the central black hole, and vertically outward, producing an
+outflow.  How much gas is driven out of the Galactic center, and how much
+is driven into the central black hole?
+
+
+Our Galactic center is presently at a low state in both star formation and
+accretion onto Sgr A*.  The Fermi bubbles suggest there was much higher
+activity in the not too distant past \citep{Su2010a}, but the present-day
+outflow activity is low and consistent with driving only by star formation
+\citep{Law2009a,Law2010a}.  Tracking the present-day gas flow is important
+to understand where gas resides during the low-state in galaxies.
+
+The key advance needed to measure the lifecycle of gas in the Galactic center
+and the feeding of the central black hole is an accurate three-dimensional
+model of the central $R<100$ pc.  Significant improvements in our understanding
+of the CMZ's geometry have been made in the last decade, refining the structural
+model of the molecular gas from a simple ring to a more realistic and physically
+self-consistent set of streams
+\citep{Molinari2011a,Kruijssen2015a,Ridley2017a,Sormani2018a,Kruijssen2018c}
+\agnote{the last of these references needs to be updated on publication}.  Detailed
+observational work testing these models has so far progressed only piecemeal,
+with individual studies assessing the line-of-sight locations of individual clouds
+\citep[e.g.][]{Butterfield2018a}.  Systematic studies comparing absorption and emission
+lines at multiple wavelengths, e.g., using centimeter-wave absorption lines of molecular species
+like H$_2$CO, OH, C$_3$H$_2$ and emission from radio recombination lines, CO,
+and other bright molecular transitions in the millimeter range, have the
+potential to provide definitive locations of clouds and HII regions and test
+the theoretical geometric models.  Assembling a geometric model will require
+systematic CMZ-wide (i.e., $\gtrsim2\degrees\times1\degrees$) maps capable of resolving
+individual clouds and HII regions ($\lesssim30\arcsec$).
 
 
 \textbf{How does star formation change in CMZ-like environments?}
@@ -143,6 +200,8 @@ of the far-infrared peak of the protostellar SEDs needed to measure the source l
 
 
 
+
+
 \section{Needs}
 High dynamic range observations of CMZ: sensitivity/resolution to detect protostellar scales across a FOV spanning the entire CMZ. Large (central kpc) surveys of our own GC, at more frequencies, in order to infer aggregate properties in other less-resolved systems, and to enable global comparison when central kpc of nearby galaxies is easily observed all at once. Spectral survey of full CMZ
 \begin{enumerate}
@@ -157,32 +216,32 @@ A larger sample of other nearby galaxies observed at parsec/sub-parsec scale res
 Numerical modelling: combined multi-scale (protostellar to kpc), multi-physics, tens Myr timescales
 
 \section{Tasks}
-Find old white papers, especially GC. \\
-Steve and Betsy add their intros to document\\
+Find old white papers, especially GC.  [DONE: see notes.txt in the overleaf]\\
+Steve and Betsy add their intros to document [BETSY: Done, commented below]\\
 
 
 Do we want a figure?  e.g., large-scale view of Galactic center (diagram) showing accretion flows outlined in top bullet point? \\
 
 
-\section{Text Grab Bag}
-
-\subsection{Betsy Grant text}
-\noindent{\bf {\em Overview}:} A key area of investigation identified in the 2010 Decadal Survey is what goes on in galaxy centers: the interactions between stars, black holes and gas. Until recently there has only been one galaxy where we can investigate these interactions in detail: the Milky Way, an inactive and relatively sedate galaxy. Now however, the capabilities offered by ALMA make it possible to conduct detailed comparisons of gas properties and interactions in the Milky Way center with those in other galaxy centers. We will conduct the {\bf first comparison of gas properties on identical, parsec scales in the Milky Way center with those in NGC 253, a nearby starburst galaxy}. This project will lead to advances in our understanding of accretion and feedback processes, and produce new templates for molecular gas properties which can be used to interpret unresolved observations of more distant galaxies. 
-\section{Project Description}  
-
-At just 8 kpc away \citep{Boehle16a}, the center of our Galaxy is relatively easy to explore in detail. At this distance, we can pick out massive clusters \citep{Clarkson12a,Hussmann12,Lu13}, and their effects on surrounding gas \citep{Lang97,Lang01}, and can even pinpoint the existence of a largely inactive supermassive black hole \citep{Genzel96,Genzel97,Ghez98,Ghez08}. As comprehensive as this view seems, our picture is incomplete: to fully probe this environment, we need to examine the molecular gas, the fuel for all future activity, at comparable, arcsecond resolution. Newly built and upgraded radio/mm interferometers like ALMA and the VLA have finally made this possible \citep[e.g.,][]{Mills15, Rathborne15, Battersby17}. 
-
-{\bf However, the problem remains that the Galactic center (GC) is the only galaxy nucleus we can explore in detail, and, cosmically speaking, it is extremely boring.} Despite hints of past activity \citep{Ponti10,SSF10,SF12}, the supermassive black hole is currently quiescent, and a sizable central reservoir of molecular gas is producing relatively little star formation \citep{Longmore13}. We can examine the molecular gas in the GC with exquisite resolution, but if mechanisms suspected to drive black hole growth \citep[through active accretion from a `torus';][]{LB69,Netzer15}, feedback and internal quenching of star formation \citep[either from star formation itself or AGN;][]{DS12,DM05} are not currently present, then this scrutiny will not yield new insight into these phenomena. %A sample size of one is not enough. %%% how the nucleus shapes the evolution of its host galaxy \citep{Gebhardt,Ferrarese}
-
-{\bf We propose to undertake the first detailed comparison of the kinematics and excitation of molecular gas in two galaxy nuclei} on identical 2 parsec size scales using identical tracers. While our GC is largely inactive, NGC 253 is a nuclear starburst with more than an order of magnitude more star formation, driving a massive molecular outflow \citep{Bolatto13}. In comparing the two, the sedate nature of the GC will make it possible to disentangle the feedback effects of a pure starburst \citep[like the GC, the black hole at the center of NGC 253 is believed to be quiescent;][]{MS10,Lehmer13} from the initial conditions of heating and turbulence naturally present in gas falling in to the central gravitational potential. 
-
-Still, present day galaxies like the Milky Way and NGC 253 are far removed from the epochs of peak star formation, black hole growth, and quenching \citep[z$>$ 1;][]{Madau98, Hasinger05, Whitaker12}.  As we are unlikely to ever be able to study distant populations of galaxies with comparable resolution or sensitivity, one approach to better understand their ISM conditions is to identify local analogs which can then be used as proxies for more detailed study. An outcome of this work will be to produce templates for the range of molecular line emission and gas properties present in these sources that can be compared with newly initiated large surveys of molecular gas in local and distant galaxies \citep[e.g., PHANGS and ASPECS;][]{Walter16,Leroy16}. 
-
-Measuring the physical conditions of molecular gas in a galaxy nucleus (e.g., its temperature, density, and turbulence) reveals how the processes in this region (e.g. supernovae, AGN) affect the gas reservoir, regulating and eventually shutting off star formation. Feedback processes-- such as radiative heating from different AGN modes \citep[e.g.,][]{Xie17}, winds launched from AGN \citep[e.g.,][]{Yuan16} and energy input from supernovae \citep{Efst00} are expected to increase temperature and turbulence of the gas, increasing its stability against gravitational collapse. However in the GC, gas conditions are notably extreme \citep[T$>$50-400 K, $\sigma>$ 10 km/s on 10 pc size scales;][]{Shetty12,Mills13a,Ginsburg16} in the absence of any obviously dominant feedback mechanism. 
-
-Current advances in sensitivity and bandwidth are making it possible not just to probe sub-parsec scales, but to survey large areas simultaneously in more than a dozen lines \citep[e.g.,][]{Jones12, Jones13, Ginsburg16, Krieger17}. With the ability to both survey the multiple square-degree GC region and probe down to the arcsecond scales that dissect individual molecular clouds, we are now poised to probe gas conditions in the GC over nearly 4 orders of magnitude in size scale, from 0.05 to 300 parsec. This allows us to finally  quantify gas conditions on the scales of local star formation in the GC and determine how these would appear when averaged over the entire nucleus of our Galaxy (as it would appear when viewed at extragalactic distances).
-
-As studies begin to target molecular gas in more and more distant sources, they will preferentially probe gas in extreme environments of luminous sources that are most easily observed at large distances (e.g., submillimeter galaxies, mergers, and ULIRGS). Studying more and more extreme local environments are therefore necessary to correctly interpret observations of individual lines for deriving conditions in more extreme environments of high-z galaxies \citep[e.g.,][]{Swinbank11}.
+% \section{Text Grab Bag}
+% 
+% \subsection{Betsy Grant text}
+% \noindent{\bf {\em Overview}:} A key area of investigation identified in the 2010 Decadal Survey is what goes on in galaxy centers: the interactions between stars, black holes and gas. Until recently there has only been one galaxy where we can investigate these interactions in detail: the Milky Way, an inactive and relatively sedate galaxy. Now however, the capabilities offered by ALMA make it possible to conduct detailed comparisons of gas properties and interactions in the Milky Way center with those in other galaxy centers. We will conduct the {\bf first comparison of gas properties on identical, parsec scales in the Milky Way center with those in NGC 253, a nearby starburst galaxy}. This project will lead to advances in our understanding of accretion and feedback processes, and produce new templates for molecular gas properties which can be used to interpret unresolved observations of more distant galaxies. 
+% \section{Project Description}  
+% 
+% At just 8 kpc away \citep{Boehle16a}, the center of our Galaxy is relatively easy to explore in detail. At this distance, we can pick out massive clusters \citep{Clarkson12a,Hussmann12,Lu13}, and their effects on surrounding gas \citep{Lang97,Lang01}, and can even pinpoint the existence of a largely inactive supermassive black hole \citep{Genzel96,Genzel97,Ghez98,Ghez08}. As comprehensive as this view seems, our picture is incomplete: to fully probe this environment, we need to examine the molecular gas, the fuel for all future activity, at comparable, arcsecond resolution. Newly built and upgraded radio/mm interferometers like ALMA and the VLA have finally made this possible \citep[e.g.,][]{Mills15, Rathborne15, Battersby17}. 
+% 
+% {\bf However, the problem remains that the Galactic center (GC) is the only galaxy nucleus we can explore in detail, and, cosmically speaking, it is extremely boring.} Despite hints of past activity \citep{Ponti10,SSF10,SF12}, the supermassive black hole is currently quiescent, and a sizable central reservoir of molecular gas is producing relatively little star formation \citep{Longmore13}. We can examine the molecular gas in the GC with exquisite resolution, but if mechanisms suspected to drive black hole growth \citep[through active accretion from a `torus';][]{LB69,Netzer15}, feedback and internal quenching of star formation \citep[either from star formation itself or AGN;][]{DS12,DM05} are not currently present, then this scrutiny will not yield new insight into these phenomena. %A sample size of one is not enough. %%% how the nucleus shapes the evolution of its host galaxy \citep{Gebhardt,Ferrarese}
+% 
+% {\bf We propose to undertake the first detailed comparison of the kinematics and excitation of molecular gas in two galaxy nuclei} on identical 2 parsec size scales using identical tracers. While our GC is largely inactive, NGC 253 is a nuclear starburst with more than an order of magnitude more star formation, driving a massive molecular outflow \citep{Bolatto13}. In comparing the two, the sedate nature of the GC will make it possible to disentangle the feedback effects of a pure starburst \citep[like the GC, the black hole at the center of NGC 253 is believed to be quiescent;][]{MS10,Lehmer13} from the initial conditions of heating and turbulence naturally present in gas falling in to the central gravitational potential. 
+% 
+% Still, present day galaxies like the Milky Way and NGC 253 are far removed from the epochs of peak star formation, black hole growth, and quenching \citep[z$>$ 1;][]{Madau98, Hasinger05, Whitaker12}.  As we are unlikely to ever be able to study distant populations of galaxies with comparable resolution or sensitivity, one approach to better understand their ISM conditions is to identify local analogs which can then be used as proxies for more detailed study. An outcome of this work will be to produce templates for the range of molecular line emission and gas properties present in these sources that can be compared with newly initiated large surveys of molecular gas in local and distant galaxies \citep[e.g., PHANGS and ASPECS;][]{Walter16,Leroy16}. 
+% 
+% Measuring the physical conditions of molecular gas in a galaxy nucleus (e.g., its temperature, density, and turbulence) reveals how the processes in this region (e.g. supernovae, AGN) affect the gas reservoir, regulating and eventually shutting off star formation. Feedback processes-- such as radiative heating from different AGN modes \citep[e.g.,][]{Xie17}, winds launched from AGN \citep[e.g.,][]{Yuan16} and energy input from supernovae \citep{Efst00} are expected to increase temperature and turbulence of the gas, increasing its stability against gravitational collapse. However in the GC, gas conditions are notably extreme \citep[T$>$50-400 K, $\sigma>$ 10 km/s on 10 pc size scales;][]{Shetty12,Mills13a,Ginsburg16} in the absence of any obviously dominant feedback mechanism. 
+% 
+% Current advances in sensitivity and bandwidth are making it possible not just to probe sub-parsec scales, but to survey large areas simultaneously in more than a dozen lines \citep[e.g.,][]{Jones12, Jones13, Ginsburg16, Krieger17}. With the ability to both survey the multiple square-degree GC region and probe down to the arcsecond scales that dissect individual molecular clouds, we are now poised to probe gas conditions in the GC over nearly 4 orders of magnitude in size scale, from 0.05 to 300 parsec. This allows us to finally  quantify gas conditions on the scales of local star formation in the GC and determine how these would appear when averaged over the entire nucleus of our Galaxy (as it would appear when viewed at extragalactic distances).
+% 
+% As studies begin to target molecular gas in more and more distant sources, they will preferentially probe gas in extreme environments of luminous sources that are most easily observed at large distances (e.g., submillimeter galaxies, mergers, and ULIRGS). Studying more and more extreme local environments are therefore necessary to correctly interpret observations of individual lines for deriving conditions in more extreme environments of high-z galaxies \citep[e.g.,][]{Swinbank11}.
 
 
 \input{solobib}
