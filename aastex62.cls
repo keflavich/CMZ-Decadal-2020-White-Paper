@@ -649,9 +649,9 @@ revtex4-1.cls^^J^^J}\stop
 \long\def\frontmatter@title@above{
 \ifrnaas
 \vspace*{-\headsep}\vspace*{\headheight}
-\footnotesize
-\noindent{\sc Draft version \today}\\[2pt]
-{\footnotesize Typeset using \LaTeX\ {\bf RNAAS} style in AASTeX62}
+%\footnotesize
+%\noindent{\sc Draft version \today}\\[2pt]
+%{\footnotesize Typeset using \LaTeX\ {\bf RNAAS} style in AASTeX62}
 \par\vspace*{-\baselineskip}\vspace*{0.625in}
 \else
 \vbox to 0pt{\vskip-48pt\normalsize\rptloopnum=0\loop
@@ -667,10 +667,11 @@ revtex4-1.cls^^J^^J}\stop
 \vglue-18pt
 {\footnotesize
 \raggedright
-{\sc Draft version \today}\\[2pt]
-{\footnotesize
-Typeset using \LaTeX\ {\bf modern} style in AASTeX62}
-\vskip48pt
+%{\sc Draft version \today}\\[2pt]
+% {\footnotesize
+% Typeset using \LaTeX\ {\bf modern} style in AASTeX62}
+% \vskip48pt
+%
 }
 \else
 %%
