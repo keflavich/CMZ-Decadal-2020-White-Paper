@@ -1063,7 +1063,7 @@ footnote\the\fncount\endcsname{\if@two@col\hsize=242pt\fi\relax#1}}
      \let\footnotetext=\old@foot@note@text
      \let\footnotemark=\old@foot@note@mark
 \ifnobreakafterkeywords
-\ifmodern\vskip24pt
+\ifmodern\vskip0pt
 \else
 \vskip12pt\fi%%
 \goodbreak
@@ -5605,7 +5605,7 @@ by 1\relax}\ignorespaces}%
    \frontmatter@author@produce@script
   }%
   \frontmatter@RRAPformat{%
-\vskip12pt
+\vskip6pt
    \expandafter\produce@RRAP\expandafter{\@date}%
    \expandafter\produce@RRAP\expandafter{\@received}%
    \expandafter\produce@RRAP\expandafter{\@revised}%
@@ -5613,9 +5613,9 @@ by 1\relax}\ignorespaces}%
    \expandafter\produce@RRAP\expandafter{\@published}%
   }%
 \expandafter\ifx\csname @submitted\endcsname\relax\else
-\vskip6pt
+\vskip3pt
 \expandafter\produce@RRAP\expandafter{\centerline{\@submitted\hbox
-to 20pt{\hfill}}\vskip12pt}%
+to 20pt{\hfill}}\vskip6pt}%
 \fi
   \frontmatter@abstract@produce
   \@ifx@empty\@pacs{}{%
